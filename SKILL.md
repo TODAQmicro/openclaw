@@ -1,6 +1,6 @@
 ---
 name: tapp
-description: "Use and publish Tapp marketplace tools. Use when: calling paywalled API tools from the Tapp marketplace, checking wallet balance, or helping a user register as a Tapp provider to earn per-call payments from their own tools. Supports local stdio mode (Claude Desktop) and hosted HTTP mode (claude.ai). NOT for: direct payment API calls or free tools."
+description: "Use and publish Tapp marketplace tools. Use when: calling paywalled API tools from the Tapp marketplace, checking wallet balance, or helping a user register as a Tapp provider to earn per-call payments from their own tools. Connects to the hosted Tapp MCP server at mcp.m.todaq.net via Tapp OIDC. NOT for: direct payment API calls or free tools."
 homepage: https://github.com/todaqmicro/openclaw-tapp
 license: MIT
 metadata:
@@ -25,21 +25,12 @@ Access paywalled API tools from the Tapp marketplace. Payments are handled trans
 - Checking wallet balance or twin info
 
 ❌ **DON'T use this skill when:**
-- User wants to register a new Tapp account (deferred feature)
 - User wants to interact with the payment API directly
 - Tool is free and doesn't require a wallet
 
-## Modes
+## Connecting
 
-### Local (stdio) — Claude Desktop / single user
-Credentials come from `.env` or `~/.todaq-mcp/token`.
-
-```bash
-mcporter call --stdio "npm run dev --prefix ~/Development/src/github.com/todaqmicro/mcp" <tool_name> [args]
-```
-
-### Hosted (HTTP) — claude.ai / multi-tenant
-Connect to the hosted MCP server. User authenticates via Tapp OIDC.
+Connect to the hosted Tapp MCP server. User authenticates via Tapp OIDC.
 
 ```bash
 mcporter auth https://mcp.m.todaq.net
