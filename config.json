@@ -2,7 +2,7 @@
   "name": "tapp",
   "version": "1.0.0",
   "description": "OpenClaw skill for the Tapp marketplace",
-  "source": "https://github.com/todaqmicro/openclaw-tapp",
+  "repository": "https://github.com/todaqmicro/openclaw-tapp",
   "mcpServer": "https://mcp.m.todaq.net",
   "paymentApi": "https://pay.m.todaq.net",
   "performance": {
