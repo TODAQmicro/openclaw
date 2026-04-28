@@ -1,4 +1,4 @@
-# tapp — OpenClaw Skill
+# OpenClaw Skill
 
 An [OpenClaw](https://openclaw.ai) skill for the [Tapp](https://tapp.todaq.net) marketplace — a payment layer built on the TODAQ protocol and integrity network.
 
