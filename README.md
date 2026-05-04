@@ -1,4 +1,4 @@
-# Qatom - OpenClaw Skill
+# Qatom - Agent Skill
 
 An [OpenClaw](https://openclaw.ai) skill for the Qatom marketplace — a payment layer built on the TODAQ protocol and integrity network.
 
